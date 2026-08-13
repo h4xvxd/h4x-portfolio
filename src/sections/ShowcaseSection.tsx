@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { Rocket, Blocks } from "lucide-react";
 import TitleHeader from "../components/TitleHeader";
 import ProjectLinks from "../components/ProjectLinks";
 import "../styles/holographic-cards.css";
@@ -290,8 +291,8 @@ const ShowcaseSection = () => {
                 <div className="absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-transparent via-[#fd5c79] to-transparent" />
 
                 <div className="relative z-10 flex flex-col items-center justify-center gap-4 h-full">
-                  <div className="w-15 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-3xl backdrop-blur-sm">
-                    ⚡
+                  <div className="w-15 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-sm">
+                    <Rocket className="w-7 h-7 text-[#62e0ff]" strokeWidth={1.5} />
                   </div>
                   <div className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#62e0ff] animate-pulse" />
@@ -320,12 +321,12 @@ const ShowcaseSection = () => {
                 <div className="absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-transparent via-[#fd5c79] to-transparent" />
 
                 <div className="relative z-10 flex flex-col items-center justify-center gap-4 h-full">
-                  <div className="w-15 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-3xl backdrop-blur-sm">
-                    ⚡
+                  <div className="w-15 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-sm">
+                    <Blocks className="w-7 h-7 text-[#fd5c79]" strokeWidth={1.5} />
                   </div>
                   <div className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#62e0ff] animate-pulse" />
-                    <span className="text-[#62e0ff] text-xs font-medium tracking-[0.2em] uppercase">Coming Soon</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#fd5c79] animate-pulse" />
+                    <span className="text-[#fd5c79] text-xs font-medium tracking-[0.2em] uppercase">Coming Soon</span>
                   </div>
                   <p className="text-white/30 text-xs text-center px-6 leading-relaxed">
                     Next project in progress

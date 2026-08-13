@@ -68,7 +68,7 @@ export const projects = [
         "Responsive design improved mobile user experience significantly"
       ]
     },
-    githubUrl: "https://github.com/chouhanrahul1999/crtd-technology",
+    githubUrl: "https://github.com/h4xvxd/crtd-technology",
     liveUrl: "https://crtd.in/"
   },
   {

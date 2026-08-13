@@ -148,39 +148,74 @@ const techStackIcons = [
     rotation: [0, 0, 0],
     mobileImg: "/images/python.png",
   },
+  {
+    name: "Three.js & 3D Web",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0, 0, 0],
+    mobileImg: "/images/logos/three.png",
+  },
+  {
+    name: "GSAP Animations",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0, Math.PI / 2, 0],
+    mobileImg: "/images/reactmodle.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    modelPath: "/models/git-svg-transformed.glb",
+    scale: 0.05,
+    rotation: [0, Math.PI, 0],
+    mobileImg: "/images/devops.svg",
+  },
+  {
+    name: "TypeScript",
+    modelPath: "/models/python-transformed.glb",
+    scale: 0.8,
+    rotation: [0, Math.PI / 4, 0],
+    mobileImg: "/images/python.png",
+  },
+  {
+    name: "React Native & Expo",
+    modelPath: "/models/node-transformed.glb",
+    scale: 5,
+    rotation: [0, Math.PI, 0],
+    mobileImg: "/images/neactnativemodle.svg",
+  },
 ];
 
 const expCards = [
 
   {
-    review: "Rahul’s contributions to Wyreflow techonology have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "A journey of continuous learning through building real-world projects. Each step pushed me to master new technologies and solve harder problems.",
     imgPath: "/images/wyreflow.svg",
     logoPath: "/images/wyreflow-logo.svg",
-    title: "Full Stack Developer",
+    title: "Self-Taught Full Stack Developer",
     date: "June 2025 - Present",
     responsibilities: [
-      "Led the development team of wyreflow technology.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Managed and maintained the CI/CD pipeline using DevOps practices to streamline deployments and improve release efficiency.",
+      "Learned modern full-stack development by shipping projects end-to-end, from databases to deployment.",
+      "Built microservices and real-time applications with Redis, Kafka, WebSockets, and PostgreSQL.",
+      "Adopted DevOps practices including CI/CD pipelines, Docker, and clean release workflows.",
     ],
   },
   {
-    review: "This is a personal project where I applied my frontend development skills, building responsive and performant web interfaces using modern technologies.",
+    review: "Phase two of my journey — mastering modern frontend and 3D web development through hands-on projects.",
     imgPath: "/images/reactjs.svg",
     logoPath: "/images/Threejs.svg",
-    title: "Frontend Developer",
+    title: "Frontend & 3D Web",
     date: "From March 2025",
     responsibilities: [
-      "Built immersive web experiences using Three.js and GSAP with advanced animations and 3D interactions.",
-      "Recreated the Apple MacBook website with pixel-perfect precision, showcasing high-end frontend craftsmanship.",
-      "Developed visually rich React applications with smooth animations, demonstrating strong UI and frontend skills.",
+      "Learned immersive web experiences using Three.js and GSAP with advanced animations and 3D interactions.",
+      "Recreated the Apple MacBook website with pixel-perfect precision, learning high-end frontend craftsmanship.",
+      "Mastered Tailwind CSS and TypeScript while building visually rich React applications with smooth animations.",
     ],
   },
   {
-    review: "This is a personal project where I developed cross-platform mobile applications using React Native, focusing on smooth user experience and clean architecture.",
+    review: "Phase three — going mobile. Learning cross-platform development with React Native and Expo.",
     imgPath: "/images/expo.svg",
     logoPath: "/images/expo-logo.svg",
-    title: "React Native Developer",
+    title: "React Native & Expo",
     date: "March 2025",
     responsibilities: [
       "Built a cross-platform food ordering app with React Native, Expo, and Appwrite with cart and auth.",
@@ -189,15 +224,15 @@ const expCards = [
     ],
   },
   {
-    review: "This is a personal project where I built full-stack applications with modern backend architecture, real-time features, and scalable infrastructure.",
+    review: "Latest phase — diving deep into full-stack, AI, and scalable infrastructure projects.",
     imgPath: "/images/nextjs.svg",
     logoPath: "/images/next-logo.svg",
-    title: "Full Stack Developer Projects",
+    title: "Full Stack & AI Projects",
     date: "2025 - Present",
     responsibilities: [
-      "Built BetterUptime — a microservices monitoring app with Redis Streams, Kafka, and multi-channel alerts.",
-      "Developed Excelidraw — a real-time collaborative whiteboard with WebSocket sync and PostgreSQL persistence.",
-      "Created DentWise — an AI-powered dental platform with Vapi voice assistant, Clerk auth, and Resend emails.",
+      "Built BetterUptime — learned microservices monitoring with Redis Streams, Kafka, and multi-channel alerts.",
+      "Developed Excelidraw — learned real-time collaboration with WebSocket sync and PostgreSQL persistence.",
+      "Created DentWise — learned AI integration with Vapi voice assistant, Clerk auth, and Resend emails.",
     ],
   },
 ];
@@ -222,42 +257,42 @@ const testimonials = [
     name: "Esther Howard",
     mentions: "@estherhoward",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I can’t say enough good things about H4X. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
     imgPath: "/images/client1.png",
   },
   {
     name: "Wade Warren",
     mentions: "@wadewarren",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with H4X was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
     imgPath: "/images/client3.png",
   },
   {
     name: "Guy Hawkins",
     mentions: "@guyhawkins",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with H4X was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. H4X's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, H4X is the ideal partner.",
     imgPath: "/images/client2.png",
   },
   {
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "H4X was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
     imgPath: "/images/client5.png",
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "H4X’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
     imgPath: "/images/client4.png",
   },
   {
     name: "Albert Flores",
     mentions: "@albertflores",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "H4X was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
     imgPath: "/images/client6.png",
   },
 ];
