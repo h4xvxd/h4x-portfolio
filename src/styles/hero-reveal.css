@@ -1,0 +1,74 @@
+/* Ported from elfekky-portfolio's hero (#hero-bg-fluid / #hero-img / #hero-stroke-1)
+   and adapted to sit inside this project's existing .hero-layout composition
+   instead of replacing it. */
+
+#hero-bg-fluid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#hero-bg-fluid > div {
+  pointer-events: auto;
+}
+
+#hero-portrait {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: clamp(140px, 16vw, 220px);
+  aspect-ratio: 3 / 4;
+  z-index: 15;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+#hero-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#hero-portrait-stroke {
+  position: absolute;
+  left: 5%;
+  bottom: -6%;
+  width: clamp(90px, 10vw, 140px);
+  height: clamp(90px, 10vw, 140px);
+  z-index: 14;
+  pointer-events: none;
+}
+
+#hero-portrait-stroke::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-white-50, #d9ecff);
+  -webkit-mask-image: url("/images/stroke.png");
+  mask-image: url("/images/stroke.png");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  #hero-portrait {
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    width: clamp(120px, 34vw, 170px);
+  }
+
+  #hero-portrait-stroke {
+    left: 50%;
+    bottom: -4%;
+    transform: translateX(calc(-50% - 60px));
+    width: clamp(70px, 18vw, 100px);
+    height: clamp(70px, 18vw, 100px);
+  }
+}
