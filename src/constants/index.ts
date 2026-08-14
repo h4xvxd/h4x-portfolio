@@ -176,6 +176,27 @@ const techStackIcons = [
     rotation: [0, 0, 0],
     mobileImg: "/images/expo-icon.svg",
   },
+  {
+    name: "HTML5",
+    modelPath: "/models/html.glb",
+    scale: 0.45,
+    rotation: [0, 0, 0],
+    mobileImg: "/images/html5-icon.svg",
+  },
+  {
+    name: "CSS3",
+    modelPath: "/models/css.glb",
+    scale: 0.45,
+    rotation: [0, 0, 0],
+    mobileImg: "/images/css3-icon.svg",
+  },
+  {
+    name: "JavaScript",
+    modelPath: "/models/js.glb",
+    scale: 0.45,
+    rotation: [0, 0, 0],
+    mobileImg: "/images/js-icon.svg",
+  },
 ];
 
 const expCards = [
