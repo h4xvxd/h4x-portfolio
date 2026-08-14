@@ -18,21 +18,21 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Full Stack Apps", imgPath: "/images/code.svg" },
+  { text: "3D Animations", imgPath: "/images/designs.svg" },
+  { text: "x86 OS in Assembly", imgPath: "/images/concepts.svg" },
+  { text: "AI / ML Projects", imgPath: "/images/ideas.svg" },
+  { text: "Full Stack Apps", imgPath: "/images/code.svg" },
+  { text: "3D Animations", imgPath: "/images/designs.svg" },
+  { text: "x86 OS in Assembly", imgPath: "/images/concepts.svg" },
+  { text: "AI / ML Projects", imgPath: "/images/ideas.svg" },
 ];
 
 const counterItems = [
-  { value: 1, suffix: "+", label: "Years of Experience" },
-  { value: 7, suffix: "+", label: "Satisfied Clients" },
-  { value: 32, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 15, suffix: "", label: "Years Old, Self-Taught" },
+  { value: 13, suffix: "+", label: "Projects Built & Published" },
+  { value: 3, suffix: "", label: "Google Certifications" },
+  { value: 100, suffix: "%", label: "Learning in Public" },
 ];
 
 const logoIconsList = [
@@ -74,18 +74,18 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Rebuild to Understand",
+    desc: "I recreate real UI and animation patterns from scratch to learn exactly how they work — not just copy them.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Learn by Shipping",
+    desc: "Instead of tutorials alone, I build small, complete projects end-to-end and ship them — GitHub is the best way to reach me.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Open to Feedback",
+    desc: "I build in public and welcome feedback from experienced developers and collaboration on open-source projects.",
   },
 ];
 
@@ -150,37 +150,37 @@ const techStackIcons = [
   },
   {
     name: "Three.js & 3D Web",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
+    modelPath: "/models/threejs-icon.glb",
+    scale: 0.5,
     rotation: [0, 0, 0],
     mobileImg: "/images/logos/three.png",
   },
   {
     name: "GSAP Animations",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
-    rotation: [0, Math.PI / 2, 0],
+    modelPath: "/models/gsap-icon.glb",
+    scale: 0.8,
+    rotation: [0, 0, 0],
     mobileImg: "/images/reactmodle.svg",
   },
   {
     name: "Tailwind CSS",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
-    rotation: [0, Math.PI, 0],
+    modelPath: "/models/tailwind-icon.glb",
+    scale: 0.45,
+    rotation: [0, 0, 0],
     mobileImg: "/images/devops.svg",
   },
   {
     name: "TypeScript",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, Math.PI / 4, 0],
+    modelPath: "/models/typescript-icon.glb",
+    scale: 0.45,
+    rotation: [0, 0, 0],
     mobileImg: "/images/python.png",
   },
   {
     name: "React Native & Expo",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, Math.PI, 0],
+    modelPath: "/models/reactnative-icon.glb",
+    scale: 0.55,
+    rotation: [0, 0, 0],
     mobileImg: "/images/neactnativemodle.svg",
   },
 ];
@@ -188,51 +188,51 @@ const techStackIcons = [
 const expCards = [
 
   {
-    review: "A journey of continuous learning through building real-world projects. Each step pushed me to master new technologies and solve harder problems.",
-    imgPath: "/images/wyreflow.svg",
-    logoPath: "/images/wyreflow-logo.svg",
-    title: "Self-Taught Full Stack Developer",
-    date: "June 2025 - Present",
+    review: "My main focus — recreating real portfolio and landing page patterns from scratch to understand exactly how they work.",
+    imgPath: "/images/code.svg",
+    logoPath: "/images/logo1.png",
+    title: "Full Stack Web Development",
+    date: "Current Focus: Building",
     responsibilities: [
-      "Learned modern full-stack development by shipping projects end-to-end, from databases to deployment.",
-      "Built microservices and real-time applications with Redis, Kafka, WebSockets, and PostgreSQL.",
-      "Adopted DevOps practices including CI/CD pipelines, Docker, and clean release workflows.",
+      "Building full-stack apps from the ground up: React + Next.js frontend, Node.js backend, databases to deployment.",
+      "Learning by shipping small, complete projects end-to-end instead of tutorials alone.",
+      "Practicing Git workflows and publishing every project as a public repository.",
     ],
   },
   {
-    review: "Phase two of my journey — mastering modern frontend and 3D web development through hands-on projects.",
-    imgPath: "/images/reactjs.svg",
-    logoPath: "/images/Threejs.svg",
-    title: "Frontend & 3D Web",
-    date: "From March 2025",
+    review: "Scroll-triggered and physics-based motion — recreating effects I find impressive until I can build them myself.",
+    imgPath: "/images/designs.svg",
+    logoPath: "/images/logo2.png",
+    title: "Frontend Animation",
+    date: "Current Focus: Practicing",
     responsibilities: [
-      "Learned immersive web experiences using Three.js and GSAP with advanced animations and 3D interactions.",
-      "Recreated the Apple MacBook website with pixel-perfect precision, learning high-end frontend craftsmanship.",
-      "Mastered Tailwind CSS and TypeScript while building visually rich React applications with smooth animations.",
+      "Practicing GSAP scroll effects, ScrollTrigger timelines, and 3D transforms in real-world layouts.",
+      "Experimenting with Framer Motion for page and element transitions in React.",
+      "Adding Three.js 3D scenes to web experiences — every model on this site is interactive.",
     ],
   },
   {
-    review: "Phase three — going mobile. Learning cross-platform development with React Native and Expo.",
-    imgPath: "/images/expo.svg",
-    logoPath: "/images/expo-logo.svg",
-    title: "React Native & Expo",
-    date: "March 2025",
+    review: "Completed an introductory track covering AI fundamentals, Python, and generative AI — certified by Google.",
+    imgPath: "/images/ideas.svg",
+    logoPath: "/images/logo3.png",
+    title: "AI / ML Fundamentals",
+    date: "Intro Track Completed",
     responsibilities: [
-      "Built a cross-platform food ordering app with React Native, Expo, and Appwrite with cart and auth.",
-      "Developed a movie discovery app with real-time trending algorithm using TMDB API and Appwrite.",
-      "Created a real estate app with Google OAuth, property listings, and agent profiles using Expo Router.",
+      "Earned Google certifications: AI Essentials, Crash Course on Python, and Generative AI Leader.",
+      "Built DentWise with an AI voice assistant to practice applying AI in a real product.",
+      "Exploring how LLMs and generative models work, one project at a time.",
     ],
   },
   {
-    review: "Latest phase — diving deep into full-stack, AI, and scalable infrastructure projects.",
-    imgPath: "/images/nextjs.svg",
-    logoPath: "/images/next-logo.svg",
-    title: "Full Stack & AI Projects",
-    date: "2025 - Present",
+    review: "The project I'm most serious about: no frameworks, no shortcuts — just the CPU, the bootloader, and a lot of documentation.",
+    imgPath: "/images/concepts.svg",
+    logoPath: "/images/logo1.png",
+    title: "x86 OS Development",
+    date: "In Progress: Bare Metal",
     responsibilities: [
-      "Built BetterUptime — learned microservices monitoring with Redis Streams, Kafka, and multi-channel alerts.",
-      "Developed Excelidraw — learned real-time collaboration with WebSocket sync and PostgreSQL persistence.",
-      "Created DentWise — learned AI integration with Vapi voice assistant, Clerk auth, and Resend emails.",
+      "Writing a custom x86 operating system in Assembly and C, starting from bare-metal boot code.",
+      "Understanding the bootloader process and low-level systems programming from the ground up.",
+      "Learning how an OS really works by building one — not just using one.",
     ],
   },
 ];
@@ -254,46 +254,46 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Google",
+    mentions: "@google",
     review:
-      "I can’t say enough good things about H4X. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "Google AI Essentials — foundational understanding of artificial intelligence: how AI works, its applications, and responsible AI practices.",
+    imgPath: "/images/logo1.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Google",
+    mentions: "@google",
     review:
-      "Working with H4X was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+      "Crash Course on Python — programming fundamentals: variables, loops, functions, data structures, and Python modules.",
+    imgPath: "/images/logo2.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Google Cloud",
+    mentions: "@googlecloud",
     review:
-      "Collaborating with H4X was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. H4X's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, H4X is the ideal partner.",
-    imgPath: "/images/client2.png",
+      "Generative AI Leader — understanding generative AI technology, its business impact, and how organizations can adopt it.",
+    imgPath: "/images/logo3.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "H4X",
+    mentions: "@h4xvxd",
     review:
-      "H4X was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+      "Self-taught snapshot: a beginner who ships. Most of what I know comes from taking things apart and rebuilding them.",
+    imgPath: "/images/logo1.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "x86 OS Project",
+    mentions: "@assembly-c",
     review:
-      "H4X’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+      "Building a custom x86 operating system from bare-metal boot code in Assembly and C — no frameworks, no shortcuts.",
+    imgPath: "/images/logo2.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "GitHub",
+    mentions: "@h4xvxd",
     review:
-      "H4X was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+      "13+ public repositories, all coded from scratch as learning exercises — the best way to reach me is through an issue or discussion.",
+    imgPath: "/images/logo3.png",
   },
 ];
 

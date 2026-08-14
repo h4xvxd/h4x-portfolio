@@ -90,7 +90,7 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm H4X, a developer with a passion for code.
+              Hi, I'm H4X — a 15-year-old self-taught developer teaching myself software from scratch. I build full-stack web apps and I'm currently deep in a custom x86 operating system in Assembly and C. Still learning. Still building — one commit at a time.
             </p>
 
             <Button
