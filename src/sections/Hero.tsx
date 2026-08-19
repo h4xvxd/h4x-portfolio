@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import { useRef } from "react";
 import Button from "../components/Button";
 import { words } from "../constants";
 import { useGSAP } from '@gsap/react'
@@ -13,25 +12,10 @@ import "../styles/hero-reveal.css";
 const HERO_LIQUID_COLORS = ["#d9ecff"];
 
 const Hero = () => {
-  const portraitRef = useRef(null);
-  const strokeRef = useRef(null);
-
   useGSAP(() => {
     gsap.fromTo('.hero-text h1',
       { y: 50, opacity: 0 },
       { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'power2.inOut' }
-    );
-
-    // Portrait reveal — ported from elfekky's #hero-img animation
-    // (scale 0.8 -> 1, y 50% -> 0, autoAlpha 0 -> 1), timed to land just
-    // after the heading stagger finishes.
-    gsap.fromTo(portraitRef.current,
-      { autoAlpha: 0, y: "50%", scale: 0.8 },
-      { autoAlpha: 1, y: 0, scale: 1, duration: 1, ease: 'sine.out', delay: 0.6 }
-    );
-    gsap.fromTo(strokeRef.current,
-      { autoAlpha: 0, scale: 0.7 },
-      { autoAlpha: 1, scale: 1, duration: 1, ease: 'power2.out', delay: 0.8 }
     );
   });
 
@@ -113,10 +97,6 @@ const Hero = () => {
           </div>
         </figure>
 
-        <div id="hero-portrait" ref={portraitRef}>
-          <img src="/images/portrait.png" alt="" draggable="false" />
-        </div>
-        <div id="hero-portrait-stroke" ref={strokeRef}></div>
       </div>
 
       <AnimatedCounter />

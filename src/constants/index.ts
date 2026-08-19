@@ -178,14 +178,14 @@ const techStackIcons = [
   },
   {
     name: "HTML5",
-    modelPath: "/models/html.glb",
+    modelPath: "/models/html5.glb",
     scale: 0.45,
     rotation: [0, 0, 0],
     mobileImg: "/images/html5-icon.svg",
   },
   {
     name: "CSS3",
-    modelPath: "/models/css.glb",
+    modelPath: "/models/css3.glb",
     scale: 0.45,
     rotation: [0, 0, 0],
     mobileImg: "/images/css3-icon.svg",
