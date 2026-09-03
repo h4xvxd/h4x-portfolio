@@ -99,3 +99,10 @@ export const dentwiseTechStack = [
   { name: "PostgreSQL", iconType: "SiPostgresql", color: "#336791" },
   { name: "Shadcn/UI", iconType: "SiShadcnui", color: "#000000" },
 ];
+
+export const larevoltosaTechStack = [
+  { name: "JavaScript", iconType: "SiJavascript", color: "#F7DF1E" },
+  { name: "GSAP", iconType: "SiGsap", color: "#88CE02" },
+  { name: "CSS3", iconType: "SiCss3", color: "#1572B6" },
+  { name: "HTML5", iconType: "SiHtml5", color: "#E34F26" }
+];

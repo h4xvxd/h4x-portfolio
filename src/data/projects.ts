@@ -1,4 +1,4 @@
-import { crtdTechStack, zapierTechStack, excelidrawTechStack, digitalWalletTechStack, brainlyTechStack, betterUptimeTechStack, fastFoodTechStack, movieAppTechStack, realStateTechStack, dentwiseTechStack } from './techStacks.js';
+import { crtdTechStack, zapierTechStack, excelidrawTechStack, digitalWalletTechStack, brainlyTechStack, betterUptimeTechStack, fastFoodTechStack, movieAppTechStack, realStateTechStack, dentwiseTechStack, larevoltosaTechStack } from './techStacks.js';
 
 export const projects = [
   {
@@ -70,6 +70,71 @@ export const projects = [
     },
     githubUrl: "https://github.com/h4xvxd/crtd-technology",
     liveUrl: "https://crtd.in/"
+  },
+  {
+    id: "larevoltosa-scroll",
+    title: "Larevoltosa Scroll Animation",
+    description: "An immersive scroll-driven animation experience featuring complex SVG lens effects, smooth zooming, and dynamic text reveals using GSAP and Lenis.",
+    image: "/media/icons/larevoltosa.svg",
+    techStack: larevoltosaTechStack,
+    features: [
+      {
+        title: "SVG Lens Effect",
+        description: "Dynamic SVG masking and clipping to create a realistic lens zoom effect on scroll",
+        icon: "FaSearchPlus"
+      },
+      {
+        title: "Smooth Scrolling",
+        description: "Integrated Lenis for high-performance, smooth inertial scrolling across all browsers",
+        icon: "FaArrowsAltV"
+      },
+      {
+        title: "GSAP Animations",
+        description: "Complex ScrollTrigger timelines managing scale, opacity, and text reveals based on scroll position",
+        icon: "FaMagic"
+      },
+      {
+        title: "Text Splitting",
+        description: "Dynamic character and word-level text animations for a polished cinematic feel",
+        icon: "FaFont"
+      }
+    ],
+    implementation: {
+      architecture: "Scroll-Driven Interactive SVG Experience",
+      highlights: [
+        "Advanced SVG namespace manipulation for dynamic element creation",
+        "GSAP ScrollTrigger integration for precise animation mapping",
+        "Lenis smooth scroll for consistent cross-browser performance",
+        "Custom lens glare simulation using dynamic SVG paths"
+      ],
+      codeSnippet: "ScrollTrigger.create({\n  trigger: spotlightSection,\n  start: 'top top',\n  end: () => '+=' + window.innerHeight * 3,\n  pin: true,\n  scrub: true,\n  onUpdate: (self) => {\n    const scale = 1 + self.progress * 2 * (settings.finalZoomScale - 1);\n    gsap.set(svg, { scale });\n  }\n});"
+    },
+    demonstrations: [
+      {
+        title: "Lens Zoom Effect",
+        description: "The main hero section features an SVG doodle that zooms in as the user scrolls, revealing hidden details.",
+        image: "/media/screenshots/larevoltosa-zoom.png"
+      },
+      {
+        title: "Dynamic Glare",
+        description: "Realistic light glare bands move across the lens elements based on scroll progress.",
+        image: "/media/screenshots/larevoltosa-glare.png"
+      }
+    ],
+    impact: {
+      metrics: [
+        { label: "Performance", value: "60fps animations" },
+        { label: "Responsiveness", value: "Fully SVG based" },
+        { label: "Interaction", value: "100% scroll-driven" }
+      ],
+      outcomes: [
+        "Successfully implemented complex SVG clipping and masking techniques",
+        "Achieved high-performance smooth scrolling with Lenis integration",
+        "Created a unique, cinematic interactive experience using GSAP"
+      ]
+    },
+    githubUrl: "https://github.com/h4xvxd/Larevoltosa-Scroll-Animation",
+    liveUrl: null
   },
   {
     id: "excelidraw",
