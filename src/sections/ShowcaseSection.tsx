@@ -118,6 +118,26 @@ const ShowcaseSection = () => {
                 GSAP animations.
               </p>
             </div>
+
+            <div className="project cursor-pointer showcase-card" onClick={() => {
+              window.open("https://github.com/h4xvxd/Larevoltosa-Scroll-Animation", "_blank")
+            }}>
+              <div className="image-wrapper bg-[#1a1a1a] holographic-card">
+                <div className="holographic-content flex items-center justify-center">
+                  <img
+                    src="/media/icons/larevoltosa.svg"
+                    alt="Larevoltosa Scroll Animation"
+                    className="w-1/2 h-1/2"
+                  />
+                </div>
+              </div>
+              <h2 className="mb-4">
+                Larevoltosa Scroll Animation <ProjectLinks githubUrl="https://github.com/h4xvxd/Larevoltosa-Scroll-Animation" />
+              </h2>
+              <p className="text-white-50 text-sm mt-2">
+                Immersive scroll-driven SVG lens effects and smooth animations.
+              </p>
+            </div>
           </div>
         </div>
 
