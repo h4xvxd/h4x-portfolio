@@ -1,11 +1,12 @@
+import { lazy, Suspense } from "react";
 import TitleHeader from "../components/TitleHeader";
 import { techStackIcons } from "../constants";
-import TechIcon from "../components/models/techModels/TechIcon";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
+const TechIcon = lazy(() => import("../components/models/techModels/TechIcon"));
 
 const TechStack = () => {
   useGSAP(() => {
@@ -40,7 +41,9 @@ const TechStack = () => {
               <div className="tech-card-content">
                 <div className="tech-icon-wrapper">
                   <div className="md:block hidden w-full h-full">
-                    <TechIcon model={icon} />
+                    <Suspense fallback={<img src={icon.mobileImg} alt={icon.name} className="w-full h-full object-contain" />}>
+                      <TechIcon model={icon} />
+                    </Suspense>
                   </div>
                   <div className="md:hidden w-full h-full flex items-center justify-center">
                     <img src={icon.mobileImg} alt={icon.name} className="w-full h-full object-contain" />

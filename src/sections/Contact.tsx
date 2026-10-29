@@ -1,7 +1,8 @@
-import { useRef, useState, type ChangeEvent, type FormEvent } from "react";
-import ContactExperience from "../components/models/contact/ContactExperience";
+import { lazy, Suspense, useRef, useState, type ChangeEvent, type FormEvent } from "react";
 import TitleHeader from "../components/TitleHeader";
 import emailjs from "@emailjs/browser";
+
+const ContactExperience = lazy(() => import("../components/models/contact/ContactExperience"));
 
 interface FormData {
   name: string;
@@ -117,7 +118,9 @@ const Contact = () => {
           <div className="xl:col-span-7 min-h-96">
             <div className="md:bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
               <div className="md:block hidden w-full h-full">
-                <ContactExperience />
+                <Suspense fallback={<div className="h-full w-full" aria-hidden="true" />}>
+                  <ContactExperience />
+                </Suspense>
               </div>
               <div className="md:hidden w-full h-full">
                 <img src="/images/3dend.svg" alt="Contact 3D" className="w-full h-full object-cover" />
