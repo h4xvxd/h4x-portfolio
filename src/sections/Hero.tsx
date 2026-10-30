@@ -9,6 +9,8 @@ import "../styles/hero-reveal.css";
 // Matches --color-white-50 in index.css — keeps the fluid bg on-palette
 // instead of importing a foreign accent color.
 const HeroExperince = lazy(() => import("../components/HeroModels/HeroExperince"));
+const LiquidEther = lazy(() => import("../components/LiquidEther/LiquidEther"));
+const HERO_LIQUID_COLORS = ["#d9ecff"];
 
 const Hero = () => {
   useGSAP(() => {
@@ -26,10 +28,32 @@ const Hero = () => {
 
       <div className="hero-layout">
         <div id="hero-bg-fluid">
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(217,236,255,0.2),transparent_38%),linear-gradient(135deg,#05070c,#122844_55%,#05070c)]"
-          />
+          <Suspense
+            fallback={
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(217,236,255,0.2),transparent_38%),linear-gradient(135deg,#05070c,#122844_55%,#05070c)]"
+              />
+            }
+          >
+            <LiquidEther
+              colors={HERO_LIQUID_COLORS}
+              mouseForce={20}
+              cursorSize={100}
+              isViscous={false}
+              viscous={30}
+              iterationsViscous={32}
+              iterationsPoisson={32}
+              resolution={0.5}
+              isBounce={false}
+              autoDemo={true}
+              autoSpeed={0.5}
+              autoIntensity={2.2}
+              takeoverDuration={0.25}
+              autoResumeDelay={3000}
+              autoRampDuration={0.6}
+            />
+          </Suspense>
         </div>
 
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
